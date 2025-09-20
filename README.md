@@ -13,6 +13,7 @@ If the daily price change exceeds a set threshold (default: **5%**), it automati
 * Calculates the **percentage change** between yesterday’s and the previous day’s closing prices.
 * If change > 5% (configurable), fetches the **top 3 latest news articles**.
 * Sends alerts as **SMS messages** with stock info + headlines.
+* Supports **YAML configuration** for safer key management.
 
 ---
 
@@ -24,6 +25,7 @@ If the daily price change exceeds a set threshold (default: **5%**), it automati
 * [Twilio API](https://www.twilio.com/) (SMS notifications)
 * **requests** (HTTP requests)
 * **twilio** (Python SDK for Twilio)
+* **PyYAML** (load YAML config)
 
 ---
 
@@ -50,17 +52,16 @@ If the daily price change exceeds a set threshold (default: **5%**), it automati
    pip install -r requirements.txt
    ```
 
-4. **Set up environment variables**
-   Create a `.env` file (or replace in code for quick testing):
+4. **Create a configuration file** (`config.yaml`) in the root folder:
 
-   ```ini
-   STOCK_API_KEY=your_alphavantage_api_key
-   NEWS_API_KEY=your_newsapi_key
-   TWILIO_SID=your_twilio_sid
-   TWILIO_AUTH_TOKEN=your_twilio_auth_token
-   TWILIO_PHONE=+123456789   # your Twilio number
-   MY_PHONE=+987654321       # your verified number
-   ```
+```yaml
+STOCK_API_KEY: "your_alphavantage_api_key"
+NEWS_API_KEY: "your_newsapi_key"
+TWILIO_SID: "your_twilio_sid"
+TWILIO_AUTH_TOKEN: "your_twilio_auth_token"
+TWILIO_PHONE: "+123456789"   # your Twilio number
+MY_PHONE: "+987654321"       # your verified number
+```
 
 ---
 
@@ -82,14 +83,24 @@ Brief: The new release is expected to boost sales significantly.
 
 ---
 
+## 📌 Example Output
+
+![Example SMS](https://user-images.githubusercontent.com/000000/example-sms.png)
+*(Screenshot of a Twilio SMS alert)*
+
+---
+
 ## 📝 Notes
 
 * Default threshold is **5%**, but you can change it in the script.
 * Make sure your Twilio number is verified if you’re on a trial account.
 * Alpha Vantage free tier has request limits (5 per minute / 500 per day).
+* Use **YAML config** to avoid hardcoding sensitive credentials.
 
 ---
 
 ## 📜 License
 
 This project is licensed under the MIT License.
+
+
