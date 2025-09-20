@@ -1,11 +1,8 @@
----
 
 # 📈 Stock Price Alert with News and SMS Notifications
 
 This project monitors stock prices using the **Alpha Vantage API**.
 If the daily price change exceeds a set threshold (default: **5%**), it automatically fetches the latest news about the company from the **NewsAPI** and sends formatted alerts via **Twilio SMS**.
-
----
 
 ## 🚀 Features
 
