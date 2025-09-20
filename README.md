@@ -31,7 +31,7 @@ If the daily price change exceeds a set threshold (default: **5%**), it automati
 1. **Clone the repo**
 
    ```bash
-   git clone https://github.com/your-username/stock-alert-sms.git
+   git clone https://github.com/VasilisKokotakis/stock-alert-sms.git
    cd stock-alert-sms
    ```
 
