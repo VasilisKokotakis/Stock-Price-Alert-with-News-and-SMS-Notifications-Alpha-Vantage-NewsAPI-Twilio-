@@ -32,7 +32,7 @@ If the daily price change exceeds a set threshold (default: **5%**), it automati
 
    ```bash
    git clone https://github.com/VasilisKokotakis/stock-alert-sms.git
-   cd stock-alert-sms
+   cd Stock-Price-Alert-with-News-and-SMS-Notifications-Alpha-Vantage-NewsAPI-Twilio-
    ```
 
 2. **Create a virtual environment (recommended)**
@@ -56,8 +56,8 @@ STOCK_API_KEY: "your_alphavantage_api_key"
 NEWS_API_KEY: "your_newsapi_key"
 TWILIO_SID: "your_twilio_sid"
 TWILIO_AUTH_TOKEN: "your_twilio_auth_token"
-TWILIO_PHONE: "+123456789"   # your Twilio number
-MY_PHONE: "+987654321"       # your verified number
+TWILIO_PHONE: "your Twilio number"
+MY_PHONE: "your verified number"
 ```
 
 ---
@@ -77,13 +77,6 @@ TSLA: 🔺6%
 Headline: Tesla announces new model.
 Brief: The new release is expected to boost sales significantly.
 ```
-
----
-
-## 📌 Example Output
-
-![Example SMS](https://user-images.githubusercontent.com/000000/example-sms.png)
-*(Screenshot of a Twilio SMS alert)*
 
 ---
 
