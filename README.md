@@ -1,10 +1,10 @@
 
-# 📈 Stock Price Alert with News and SMS Notifications
+# Stock Price Alert with News and SMS Notifications
 
 This project monitors stock prices using the **Alpha Vantage API**.
 If the daily price change exceeds a set threshold (default: **5%**), it automatically fetches the latest news about the company from the **NewsAPI** and sends formatted alerts via **Twilio SMS**.
 
-## 🚀 Features
+## Features
 
 * Fetches **daily stock data** from Alpha Vantage.
 * Calculates the **percentage change** between yesterday’s and the previous day’s closing prices.
@@ -14,7 +14,7 @@ If the daily price change exceeds a set threshold (default: **5%**), it automati
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 * **Python 3**
 * [Alpha Vantage API](https://www.alphavantage.co/) (stock data)
@@ -26,7 +26,7 @@ If the daily price change exceeds a set threshold (default: **5%**), it automati
 
 ---
 
-## ⚙️ Setup & Installation
+## Setup & Installation
 
 1. **Clone the repo**
 
@@ -62,7 +62,7 @@ MY_PHONE: "your verified number"
 
 ---
 
-## ▶️ Usage
+## Usage
 
 Run the script:
 
@@ -80,7 +80,7 @@ Brief: The new release is expected to boost sales significantly.
 
 ---
 
-## 📝 Notes
+## Notes
 
 * Default threshold is **5%**, but you can change it in the script.
 * Make sure your Twilio number is verified if you’re on a trial account.
@@ -89,8 +89,8 @@ Brief: The new release is expected to boost sales significantly.
 
 ---
 
-## 📜 License
+## License
 
-This project is licensed under the MIT License.
+This project is licensed under the **MIT License** – see the [LICENSE](LICENSE) file for details.
 
 
